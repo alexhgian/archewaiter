@@ -10,30 +10,45 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
-<body>
+<body>  
 
-<div class="panel panel-default">
-  <div class="panel-body">
-    <div ng-controller='Timer'>
-    <h3>Waiting to connect. </h3>
-    <h5>Too many users in Kyrios. Please wait.</h5>
-    <div style="color:red;">Queue: {{counter}}</div>
-    <div style="color:red;">Wait time: {{tlFormat}} </div>   
-  
-<div class="center-block">
-<button type="button" class="btn btn-warning">Try Another</button>
+<div ng-controller='Timer' class="wrapper">
+    <form class="form-signin">       
+      <h3 class="form-signin-heading text-center">Please Waiting to connect. </h3>
+       
+<p class="text-center">Too many users in {{serverName}}. Please wait.</p>
 
-<button type="button" class="btn btn-warning">Exist Game</button>
+<div class="row text-center">
+	
+       <div style="color:red;">Queue: {{counter}}</div>
+ 
 </div>
-    </div>
+<div class="row text-center">
+
+	<div style="color:red;">Wait time: {{tlFormat}} </div>   
+</div>
+<br>
+
+<div class="row text-center">
+
+<div class="btn-group">
+<button ng-click="reloadRoute()" type="button" class="btn btn-warning" >Try Another</button>	
+</div>
+
+
+<div class="btn-group">
+<button type="button" class="btn btn-warning" >Exit Game</button>	
+</div>
+
+</div>
+	</div>
+      <!--button class="btn btn-lg btn-primary btn-block" type="submit">Login</button-->   
+    </form>
   </div>
-</div>
 
 
 
 
 </body>
 </html>
-
-
 
