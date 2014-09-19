@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="myapp">
+<head>
+  <meta charset="utf-8">
+  <title>Archewaiter</title> 
+<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="myapp.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div ng-controller='Timer'>
+    <h3>Waiting to connect. </h3>
+    <h5>Too many users in Kyrios. Please wait.</h5>
+    <div style="color:red;">Queue: {{counter}}</div>
+    <div style="color:red;">Wait time: {{tlFormat}} </div>   
+  
+<div class="center-block">
+<button type="button" class="btn btn-warning">Try Another</button>
+
+<button type="button" class="btn btn-warning">Exist Game</button>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
